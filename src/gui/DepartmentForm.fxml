@@ -3,9 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<!--fx:controller="gui.DepartmentForm"-->
-
-<AnchorPane prefHeight="190.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="190.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentFormController">
    <children>
       <GridPane prefHeight="165.0" prefWidth="551.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
         <columnConstraints>
@@ -21,13 +19,13 @@
          <children>
             <Label text="Id" />
             <Label text="Name" GridPane.rowIndex="1" />
-            <TextField editable="false" GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldId" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="labelErrorName" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" text="Save" />
-                  <Button mnemonicParsing="false" text="Cancel" />
+                  <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#onButtonSaveAction" text="Save" />
+                  <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#onButtonCancelAction" text="Cancel" />
                </children>
             </HBox>
          </children>
