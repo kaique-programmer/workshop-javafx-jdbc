@@ -11,14 +11,6 @@ import java.io.IOException;
 public class Main extends Application {
     private static Scene mainScene;
 
-    /*@Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Sample JavaFX application");
-        primaryStage.setScene(new Scene(root, 800, 600));
-        primaryStage.show();
-    }*/
-
     @Override
     public void start(Stage primaryStage) {
         try {

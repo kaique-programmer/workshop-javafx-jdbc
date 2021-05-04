@@ -14,7 +14,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.entities.Department;
 import model.exceptions.ValidationException;
-import models.services.DepartmentService;
+import model.services.DepartmentService;
 
 import java.net.URL;
 import java.util.*;

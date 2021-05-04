@@ -1,4 +1,4 @@
-package models.services;
+package model.services;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
