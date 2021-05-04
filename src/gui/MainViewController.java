@@ -1,6 +1,6 @@
 package gui;
 
-import graphicaluserinterface.util.Alerts;
+import gui.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
